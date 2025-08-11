@@ -1,0 +1,159 @@
+/* Colors */
+/* Black: #161925 */
+/* Green:#384D48  */
+/* Orange: #FE7F2D */
+/* White: #F2F4F3 */
+/* Red: #92140C */
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color:#161925;
+    color: #F2F4F3;
+    font-family: "JetBrains Mono", monospace;
+    
+}
+
+
+
+
+/* This is the main wrapper for all boxes ----> */
+.item-box-wrapper{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: whitesmoke; */
+    
+}
+/* -------------------------------------------- */
+
+/* This is the styling for all item-boxes */
+.item-box{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    
+    
+    /* background-color: white; */
+}
+/* ------------------------------------- */
+
+
+/* Top welcome item-box */
+.welcome-wrapper{
+    display: flex;
+    height: 100vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome-wrapper img{
+    width: 60%;
+}
+
+.btn{
+    height:35px;
+    width: 100px;
+    border-radius: 9999px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: #F2F4F3;
+}
+
+.link-btn a{
+    color:#F2F4F3;
+}
+
+.link-btn:hover{
+    background-color: #F2F4F3;
+    color:#161925;
+}
+
+.skillbtn-wrapper{
+    display: flex;
+    justify-content: center;
+    gap:20px;
+}
+
+/* Colored borders for skill btns */
+#red{
+    border:1px solid red;
+}
+
+#blue{
+    border:1px solid blue;
+}
+
+#yellow{
+    border:1px solid yellow;
+}
+
+#green{
+    border:1px solid green;
+}
+
+#orange{
+    border:1px solid orange;
+}
+
+#godot{
+    border:1px solid rgb(98, 110, 245);
+}
+/* ------------------------------------- */
+
+/* Projects sections */
+
+.project-card{
+    height: 300px;
+    width: 600px;
+    position: relative;
+    box-sizing: border-box;
+    margin-bottom:30px;
+}
+
+.project-card img{
+    border-radius: 25px;
+    height: 100%;
+    width: 100%;
+}
+
+.project-text{
+    padding-left: 5px;
+    position: absolute;
+    bottom:0;
+    max-height: 0;
+    overflow:hidden;
+    padding-bottom: 60px;
+    transition: ease 1s;
+    opacity: 1;
+    
+}
+
+.overlay{
+    opacity: 0.5;
+    position: absolute;
+    inset: 0;
+    transition: 1s;
+}
+
+.overlay:hover{
+    opacity: 0;
+    transition: ease-in-out 1s;
+}
+
+.project-card:has(.overlay:hover) .project-text   {
+    max-height: 200px;
+    transition: ease-in-out 1s;
+    
+}
+
+
+
+
+
+/* ------------------------------------ */
