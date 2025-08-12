@@ -24,6 +24,10 @@ header{
     align-items: center;
 }
 
+header img{
+    width: 30%;
+}
+
 nav{
     height:10vh;
     width: 100vw;
@@ -131,4 +135,24 @@ nav{
 
 #green{
     border: 1px solid green;
+}
+
+
+
+
+@media only screen and (max-width: 1000px) {
+ header{
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+
+ header img{
+    width: 60%;
+    height:40%;
+ }
+
 }
