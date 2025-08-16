@@ -13,161 +13,109 @@
     />
 
     <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
 
-    <title>DevForge Works</title>
-  </head>
-  <body>
-    <header>
-      <div class="welcome-text-wrapper">
-        <h1>Welcome!</h1>
-        <h2>To DevForge Works</h2>
+    <nav>
+      <div class="hamburgerMenu">
+        <img
+          class="svgIcon"
+          src="./imgs/svg/hamburger-svgrepo-com.svg"
+          alt=""
+        />
+      </div>
+      <div class="svgIcons">
+        <img
+          class="svgIcon"
+          src="./imgs/svg/github-color-svgrepo-com.svg"
+          alt=""
+        />
+        <img
+          class="svgIcon"
+          src="./imgs/svg/instagram-1-svgrepo-com.svg"
+          alt=""
+        />
+        <img class="svgIcon" src="./imgs/svg/linkedin-svgrepo-com.svg" alt="" />
+        <img class="svgIcon" src="./imgs/svg/twitch-svgrepo-com.svg" alt="" />
+      </div>
+    </nav>
+
+    <div class="background"></div>
+
+    <header class="hero">
+      <div class="headerText">
+        <h1>Welcome To</h1>
+        <h2>DevForge Works</h2>
         <p>
-          Your trusted coding smith. Devlivering projects hot from the forge
+          Your trusted coding smith. Devlivering clean projects hot from the
+          forge
         </p>
+      </div>
+      <div class="skillBtnContainer">
         <button class="btn" id="red">HTML</button>
         <button class="btn" id="blue">CSS</button>
         <button class="btn" id="yellow">JavaScript</button>
-        <button class="btn" id="lblue">React</button>
-        <button class="btn" id="green">MongoDb</button>
-        <!-- <button class="btn">GoDot</button>
-        <button class="btn">Game Maker</button> -->
+        <!-- <button class="btn" id="green">MongoDB</button> -->
+        <!-- <button class="btn" id="lblue">React</button> -->
       </div>
-
-      <img src="./img/DFWlogo.png" alt="" />
+      <div class="twitchContainer">
+        <h3>Follow the progress of projects on Twitch</h3>
+        <button class="btn" id="twitch">Twitch</button>
+      </div>
     </header>
 
-    <nav>
-      <a href="#projects"><button class="btn link-btn">Projects</button></a>
-      <a href="#about"><button class="btn link-btn">About</button></a>
-      <a href="#contact"><button class="btn link-btn">Contact</button></a>
-
-      <!-- <button class="btn">ksksks</button>
-      <button class="btn">ksksks</button> -->
-    </nav>
-
-    <section id="projects">
-      <div class="all-cards-wrapper">
+    <section class="section" id="workHub">
+      <div class="sectionTitle">
         <h2>Recent Projects</h2>
-        <div class="projects">
-          <div class="card">
-            <img src="./img/dna-2649850_640.jpg" alt="" />
+      </div>
 
-            <article class="card-text-wrap">
+      <div class="projectCardContainer">
+        <div class="projectCard">
+          <a
+            href="https://devforgeworks.github.io/project-campfire-v2/"
+            target="_blank"
+          >
+            <img src="./imgs/Skärmbild 2025-08-16 222527.png" alt="" />
+
+            <div class="textContainer">
               <h3>Example Text</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Veritatis perspiciatis consequuntur cumque sit totam ad officia
-                iure excepturi tempore iste.
+                Distinctio doloribus aut non tempore beatae enim modi vero
+                explicabo sit officiis!
               </p>
-            </article>
-            <img
-              class="overlay-img"
-              src="./img/abstract-1850424_1280.jpg"
-              alt=""
-            />
-          </div>
+            </div>
 
-          <div class="card">
-            <img src="./img/dna-2649850_640.jpg" alt="" />
+            <div class="overlay"></div>
+          </a>
+        </div>
 
-            <article class="card-text-wrap">
+        <div class="projectCard">
+          <a
+            href="https://devforgeworks.github.io/project-campfire-v1/"
+            target="_blank"
+          >
+            <img src="./imgs/campfire1.png" alt="" />
+
+            <div class="textContainer">
               <h3>Example Text</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Veritatis perspiciatis consequuntur cumque sit totam ad officia
-                iure excepturi tempore iste.
+                Distinctio doloribus aut non tempore beatae enim modi vero
+                explicabo sit officiis!
               </p>
-            </article>
-            <img
-              class="overlay-img"
-              src="./img/abstract-1850424_1280.jpg"
-              alt=""
-            />
-          </div>
+            </div>
 
-          <div class="card">
-            <img src="./img/dna-2649850_640.jpg" alt="" />
-
-            <article class="card-text-wrap">
-              <h3>Example Text</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Veritatis perspiciatis consequuntur cumque sit totam ad officia
-                iure excepturi tempore iste.
-              </p>
-            </article>
-            <img
-              class="overlay-img"
-              src="./img/abstract-1850424_1280.jpg"
-              alt=""
-            />
-          </div>
+            <div class="overlay"></div>
+          </a>
         </div>
       </div>
     </section>
 
-    <section class="upcoming-projects">
-      <div class="all-cards-wrapper">
-        <h2>Recent Projects</h2>
-        <div class="projects">
-          <div class="card">
-            <img src="./img/dna-2649850_640.jpg" alt="" />
+    <section class="section" id="about"></section>
 
-            <article class="card-text-wrap">
-              <h3>Example Text</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Veritatis perspiciatis consequuntur cumque sit totam ad officia
-                iure excepturi tempore iste.
-              </p>
-            </article>
-            <img
-              class="overlay-img"
-              src="./img/abstract-1850424_1280.jpg"
-              alt=""
-            />
-          </div>
+    <section class="section" id="contact"></section>
 
-          <div class="card">
-            <img src="./img/dna-2649850_640.jpg" alt="" />
-
-            <article class="card-text-wrap">
-              <h3>Example Text</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Veritatis perspiciatis consequuntur cumque sit totam ad officia
-                iure excepturi tempore iste.
-              </p>
-            </article>
-            <img
-              class="overlay-img"
-              src="./img/abstract-1850424_1280.jpg"
-              alt=""
-            />
-          </div>
-
-          <div class="card">
-            <img src="./img/dna-2649850_640.jpg" alt="" />
-
-            <article class="card-text-wrap">
-              <h3>Example Text</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Veritatis perspiciatis consequuntur cumque sit totam ad officia
-                iure excepturi tempore iste.
-              </p>
-            </article>
-            <img
-              class="overlay-img"
-              src="./img/abstract-1850424_1280.jpg"
-              alt=""
-            />
-          </div>
-        </div>
-      </div>
-
-    <section></section>
-
-    <article></article>
-  </body>
+    <footer></footer>
+  </head>
+  <body></body>
 </html>
