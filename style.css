@@ -59,7 +59,7 @@ h4{
   text-align: center;
   gap: 100px;
   padding-top:20px;
-  border-right: 5px solid;
+  border-right: 2px solid;
   border-image: linear-gradient(to bottom, #ff00cc, #9900ff, #00ffff) 1;
 }
 
@@ -138,14 +138,12 @@ li{
   flex-wrap: wrap;
   margin:40px auto;
   gap: 2rem;
-  
 }
 
 .project-card{
   position:relative;
   flex: 1 1 45%;
   overflow:hidden;
-  margin-bottom: 40px;
 }
 
 
@@ -155,6 +153,7 @@ li{
   max-width:100%;
   background:rgba(0, 0, 0, 0.7);
 }
+
 .project-text-container {
     position:absolute;
     bottom:0;
