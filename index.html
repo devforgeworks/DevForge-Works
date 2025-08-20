@@ -3,119 +3,86 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link src="
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
-      rel="stylesheet"
-    />
-
     <link rel="stylesheet" href="./style.css" />
-    <title>Document</title>
-
-    <nav>
-      <div class="hamburgerMenu">
-        <img
-          class="svgIcon"
-          src="./imgs/svg/hamburger-svgrepo-com.svg"
-          alt=""
-        />
-      </div>
-      <div class="svgIcons">
-        <img
-          class="svgIcon"
-          src="./imgs/svg/github-color-svgrepo-com.svg"
-          alt=""
-        />
-        <img
-          class="svgIcon"
-          src="./imgs/svg/instagram-1-svgrepo-com.svg"
-          alt=""
-        />
-        <img class="svgIcon" src="./imgs/svg/linkedin-svgrepo-com.svg" alt="" />
-        <img class="svgIcon" src="./imgs/svg/twitch-svgrepo-com.svg" alt="" />
-      </div>
-    </nav>
-
-    <div class="background"></div>
-
-    <header class="hero">
-      <div class="headerText">
-        <h1>Welcome To</h1>
-        <h2>DevForge Works</h2>
-        <p>
-          Your trusted coding smith. Devlivering clean projects hot from the
-          forge
-        </p>
-      </div>
-      <div class="skillBtnContainer">
-        <button class="btn" id="red">HTML</button>
-        <button class="btn" id="blue">CSS</button>
-        <button class="btn" id="yellow">JavaScript</button>
-        <!-- <button class="btn" id="green">MongoDB</button> -->
-        <!-- <button class="btn" id="lblue">React</button> -->
-      </div>
-      <div class="twitchContainer">
-        <h3>Follow the progress of projects on Twitch</h3>
-        <button class="btn" id="twitch">Twitch</button>
-      </div>
-    </header>
-
-    <section class="section" id="workHub">
-      <div class="sectionTitle">
-        <h2>Recent Projects</h2>
-      </div>
-
-      <div class="projectCardContainer">
-        <div class="projectCard">
-          <a
-            href="https://devforgeworks.github.io/project-campfire-v2/"
-            target="_blank"
-          >
-            <img src="./imgs/Skärmbild 2025-08-16 222527.png" alt="" />
-
-            <div class="textContainer">
-              <h3>Example Text</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Distinctio doloribus aut non tempore beatae enim modi vero
-                explicabo sit officiis!
-              </p>
-            </div>
-
-            <div class="overlay"></div>
-          </a>
-        </div>
-
-        <div class="projectCard">
-          <a
-            href="https://devforgeworks.github.io/project-campfire-v1/"
-            target="_blank"
-          >
-            <img src="./imgs/campfire1.png" alt="" />
-
-            <div class="textContainer">
-              <h3>Example Text</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Distinctio doloribus aut non tempore beatae enim modi vero
-                explicabo sit officiis!
-              </p>
-            </div>
-
-            <div class="overlay"></div>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="about"></section>
-
-    <section class="section" id="contact"></section>
-
-    <footer></footer>
+    <title>DevForge Works</title>
   </head>
-  <body></body>
+  <body>
+    <div class="main-container">
+      <nav>
+        <div class="menu">
+          <h3>DevForge Works</h3>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Work</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="section-container">
+        <section class="section hero">
+          <div class="hero-text-container">
+            <h1>Welcome</h1>
+            <h2>To <span>DevForge Works</span></h2>
+            <p>
+              Your trusted codning smith. Delivering clean project, hot from the
+              forge.
+            </p>
+
+            <button class="btn" id="red">HTML</button>
+            <button class="btn" id="blue">CSS</button>
+            <button class="btn" id="yellow">JavaScrip</button>
+            <button class="btn" id="green">MongoDB</button>
+            <button class="btn" id="lblue">React</button>
+          </div>
+
+          <div class="twitch-container">
+            <p>
+              You can also find me on Twitch streaming my coding journey through
+              projects and learning new things. Along side with some gaming.
+            </p>
+            <a href="https://www.twitch.com/rathoz" target="_blank"
+              ><button class="btn" id="twitch">Twitch</button></a
+            >
+          </div>
+        </section>
+        <section class="section work-hub">
+          <h3>My Work</h3>
+          <div class="project-container">
+            <div class="project-card">
+              <img
+                src="https://preview.redd.it/dxkfboy5zotz.jpg?width=1080&crop=smart&auto=webp&s=3909202a7783db8ae160acf82f6d752154356aec"
+                alt=""
+              />
+              <div class="project-text-container">
+                <h4>Example</h4>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Aspernatur, assumenda.
+                  <br />
+                  <a href=""><button class="btn">See Live</button></a>
+                </p>
+              </div>
+            </div>
+            <div class="project-card">
+              <img
+                src="https://preview.redd.it/dxkfboy5zotz.jpg?width=1080&crop=smart&auto=webp&s=3909202a7783db8ae160acf82f6d752154356aec"
+                alt=""
+              />
+              <div class="project-text-container">
+                <h4>Example</h4>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Aspernatur, assumenda.
+                  <br />
+                  <a href=""><button class="btn">See Live</button></a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
 </html>
