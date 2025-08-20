@@ -4,7 +4,9 @@
   box-sizing:border-box;
   color: #9900ff;
   font-family:sans-serif;
+  scroll-behavior: smooth;
 }
+
 
 body{
   overflow-x: hidden;
@@ -18,19 +20,32 @@ a{
 }
 
 h1{
-  font-size:72pt;
+  /* font-size:72pt; */
+  font-size: clamp(3rem, 2vw, 10rem);
+
+  /* font-size: 10rem; */
 }
 
 h2{
-  font-size: 48pt;
+  /* font-size: 4rem; */
+  font-size: clamp(2rem, 2vw, 4rem);
+
 }
 
 h3{
-  font-size:32pt;
+  /* font-size:2rem; */
+  font-size: clamp(1.5rem, 2vw, 3rem);
+
+}
+
+.menu h3{
+  font-size: clamp(0.9rem, 2vw, 2rem);
 }
 
 h4{
-  font-size:26pt;
+  /* font-size:1.5rem; */
+  font-size: clamp(1rem, 2vw, 1.5rem);
+
 }
 
 .menu{
@@ -56,7 +71,9 @@ ul{
 
 li{
   margin-bottom: 30px;
-  font-size:22pt;
+  font-size:2rem;
+  font-size: clamp(1rem, 2vw, 2rem);
+
 }
 
 .section-container{
@@ -102,7 +119,9 @@ li{
 
 
 .hero p{
-  font-size: 18pt;
+  /* font-size: 2rem; */
+  font-size: clamp(1rem, 2vw, 2rem);
+
 }
 
 .twitch-container, .hero-text-container{
@@ -116,14 +135,15 @@ li{
 .project-container{
   width:90%;
   display: flex;
-  flex-grow: 1;
-  gap: 20px;
+  flex-wrap: wrap;
+  margin:40px auto;
+  gap: 2rem;
   
 }
 
 .project-card{
   position:relative;
-  width:33%;
+  flex: 1 1 45%;
   overflow:hidden;
   margin-bottom: 40px;
 }
@@ -135,34 +155,35 @@ li{
   max-width:100%;
   background:rgba(0, 0, 0, 0.7);
 }
-.project-text-container .btn{
+.project-text-container {
+    position:absolute;
+    bottom:0;
+    width: 100%;
+}
+
+.project-text-container button{
     position:absolute;
     bottom:0;
 }
 
 .project-text-container p{
+  font-size: clamp(1rem, 2vw, 2rem);
   max-height:0;
   min-height:0;
   opacity:0;
   transition: all 0.8s ease;
-  
 }
 
 .project-card:hover .project-text-container p{
   opacity: 1;
-  min-height: 150px;
-  max-height: 150px;
+  min-height: 100px;
+  max-height: 100px;
 }
 
 .project-card img{
   width:100%;
-  height:auto;
+  object-fit: cover;
 }
-
-
-
-
-
 
 #red{
   border: 3px solid;
@@ -203,53 +224,8 @@ li{
   scale:1.1;
 }
 
-@media screen and (max-width:600px){
-  h1{
-font-size:20pt;
-}
-  h2{
-font-size:16pt;
-}
-  h3{
-    font-size:12pt;
-  }
-  h4{
-font-size:10pt;
-}
-  .hero p{
-    font-size:10pt;
-  }
-
-  .btn, #twitch{
-    width: 3rem;
-    font-size: 6pt;
-    height: 1.5rem;
-  }
-
-  .project-container{
-    display: block;
-  }
-
+@media (max-width:1000px){
   .project-card{
-  position:relative;
-  width:100%;
-  overflow:hidden;
-}
-
-.project-card:hover .project-text-container p{
-  opacity: 1;
-  min-height: 104px;
-  max-height: 104px;
-}
-
-li{
-  font-size:12pt;
-
-
-}
-
-
-
-
-
+    flex: 1 1 100%;
+  }
 }
