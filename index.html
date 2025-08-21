@@ -8,18 +8,22 @@
   </head>
   <body>
     <div class="main-container">
+      <div class="off-screen">
+        <ul>
+          <li>Home</li>
+          <li>work</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+
       <nav>
-        <div class="menu">
-          <h3>DevForge Works</h3>
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Contact</a></li>
-          </ul>
+        <div class="ham-menu">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
       </nav>
-
       <div class="section-container">
         <section class="section hero" id="home">
           <div class="hero-text-container">
@@ -47,9 +51,9 @@
             >
           </div>
         </section>
-        <section class="section work-hub">
+        <section class="section work-hub" id="work">
           <h3>My Work</h3>
-          <div class="project-container" id="work">
+          <div class="project-container">
             <div class="project-card">
               <img
                 src="https://preview.redd.it/dxkfboy5zotz.jpg?width=1080&crop=smart&auto=webp&s=3909202a7783db8ae160acf82f6d752154356aec"
@@ -114,5 +118,7 @@
         </section>
       </div>
     </div>
+
+    <script src="./script.js"></script>
   </body>
 </html>
