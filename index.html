@@ -3,122 +3,86 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="./style.css" />
+
     <title>DevForge Works</title>
   </head>
   <body>
+    <nav></nav>
+
     <div class="main-container">
-      <div class="off-screen">
-        <ul>
-          <li>Home</li>
-          <li>work</li>
-          <li>About</li>
-          <li>Contact</li>
-        </ul>
-      </div>
+      <section class="hero" id="home">
+        <h1>Web Developer with a passion for code and function</h1>
+        <button class="btn">My Work</button>
+        <button class="btn">Contact</button>
+      </section>
+      <h2>About Me</h2>
 
-      <nav>
-        <div class="ham-menu">
-          <span></span>
-          <span></span>
-          <span></span>
+      <section class="about">
+        <div class="pressentation">
+          <img
+            src="https://images.unsplash.com/photo-1743482858217-5aef42cfc636?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+          />
         </div>
-      </nav>
-      <div class="section-container">
-        <section class="section hero" id="home">
-          <div class="hero-text-container">
-            <h1>Welcome</h1>
-            <h2>To <span>DevForge Works</span></h2>
-            <p>
-              Your trusted codning smith. Delivering clean project, hot from the
-              forge.
-            </p>
 
-            <button class="btn" id="red">HTML</button>
-            <button class="btn" id="blue">CSS</button>
-            <button class="btn" id="yellow">JavaScrip</button>
-            <button class="btn" id="green">MongoDB</button>
-            <button class="btn" id="lblue">React</button>
-          </div>
+        <div class="pressentation-text">
+          <p>
+            A Web Developer focused on creating functional and efficient
+            websites, with a passion for JavaScript and problem solving
+          </p>
+        </div>
+      </section>
 
-          <div class="twitch-container">
+      <h2>Projects</h2>
+      <section class="projects">
+        <div class="project-card">
+          <img
+            src="https://cdn.pixabay.com/photo/2022/12/01/04/42/man-7628305_1280.jpg"
+            alt=""
+          />
+          <div class="project-text">
+            <h3>Example</h3>
             <p>
-              You can also find me on Twitch streaming my coding journey through
-              projects and learning new things. Along side with some gaming.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Molestiae, harum.
             </p>
-            <a href="https://www.twitch.com/rathoz" target="_blank"
-              ><button class="btn" id="twitch">Twitch</button></a
-            >
           </div>
-        </section>
-        <section class="section work-hub" id="work">
-          <h3>My Work</h3>
-          <div class="project-container">
-            <div class="project-card">
-              <img
-                src="https://preview.redd.it/dxkfboy5zotz.jpg?width=1080&crop=smart&auto=webp&s=3909202a7783db8ae160acf82f6d752154356aec"
-                alt=""
-              />
-              <div class="project-text-container">
-                <h4>Example</h4>
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Aspernatur, assumenda.
-                  <br />
-                  <a href=""><button class="btn">See Live</button></a>
-                </p>
-              </div>
-            </div>
-            <div class="project-card">
-              <img
-                src="https://preview.redd.it/dxkfboy5zotz.jpg?width=1080&crop=smart&auto=webp&s=3909202a7783db8ae160acf82f6d752154356aec"
-                alt=""
-              />
-              <div class="project-text-container">
-                <h4>Example</h4>
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Aspernatur, assumenda.
-                  <br />
-                  <a href=""><button class="btn">See Live</button></a>
-                </p>
-              </div>
-            </div>
-            <div class="project-card">
-              <img
-                src="https://preview.redd.it/dxkfboy5zotz.jpg?width=1080&crop=smart&auto=webp&s=3909202a7783db8ae160acf82f6d752154356aec"
-                alt=""
-              />
-              <div class="project-text-container">
-                <h4>Example</h4>
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Aspernatur, assumenda.
-                  <br />
-                  <a href=""><button class="btn">See Live</button></a>
-                </p>
-              </div>
-            </div>
-            <div class="project-card">
-              <img
-                src="https://preview.redd.it/dxkfboy5zotz.jpg?width=1080&crop=smart&auto=webp&s=3909202a7783db8ae160acf82f6d752154356aec"
-                alt=""
-              />
-              <div class="project-text-container">
-                <h4>Example</h4>
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Aspernatur, assumenda.
-                  <br />
-                  <a href=""><button class="btn">See Live</button></a>
-                </p>
-              </div>
-            </div>
+        </div>
+
+        <div class="project-card">
+          <img
+            src="https://cdn.pixabay.com/photo/2022/12/01/04/42/man-7628305_1280.jpg"
+            alt=""
+          />
+          <div class="project-text">
+            <h3>Example</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Molestiae, harum.
+            </p>
+            <button>See Live</button>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <form action="mailto:devforgeworks@gmail.com">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" />
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your Email"
+          />
+          <label for="message">Message</label>
+          <textarea id="message" placeholder="Your Message"></textarea>
+          <button class="btn">Send</button>
+        </form>
+      </section>
     </div>
-
-    <script src="./script.js"></script>
   </body>
 </html>
