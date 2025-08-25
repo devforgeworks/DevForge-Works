@@ -1,5 +1,0 @@
-Nästa sak att fixa:
-- Hover effekt med texten som kommer upp.
-- About section
-- Mail form
-- All projects CTA and page.
