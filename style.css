@@ -1,0 +1,142 @@
+:root{
+  --dark-bg:#2E3440;
+  --dark-accent:#4C566A;
+  --light-bg: #E5E9F0;
+  --light-text: #D8DEE9;
+  --highlight: #88C0D0;
+  --green-accent:#A3BE8C;
+  font-family:sans-serif; 
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+    background: var(--dark-bg);
+    color: var(--light-text);
+}
+
+header{
+    width: 100vw;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position:relative;
+    padding: 0 5px 0 5px;
+}
+
+nav{
+    height:7vh;
+    position:fixed;
+    top:0;
+    background: transparent;
+}
+
+.btn{
+    margin-top:5px;
+    width: 7rem;
+    height: 2rem;
+    border-radius: 9999px;
+    border: 2px solid var(--green-accent);
+    background: transparent;
+    color:var(--light-text);
+}
+
+/* <---------Write the ham menu here-----------------> */
+
+
+
+
+/* <---------Write the ham menu here-----------------> */
+
+.main-content{
+    height:100vh;
+    width:100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.about, .projects{
+    min-height:50%;
+    width: 100%;
+    padding: 0 5px 0 5px;
+}
+
+.about img{
+    width: 50%;
+}
+
+.pressentation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    /* text-align: center; */
+}
+
+
+.projects-container{
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+.project-card{
+    width: 45%;
+    height: 50%;
+    position:relative;
+    overflow: hidden;
+    border: 1px solid var(--green-accent);
+    transition: all 2s ease;
+    
+}
+
+.project-card img{
+    width: 100%;
+}
+
+.project-card-text-container{
+    position: absolute;
+    width: 100%;
+    bottom:0;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 0 5px 0 5px;
+    
+}
+
+.project-card-text-container p{
+    max-height:0px;
+    opacity: 0;
+    /* transition: max-height 1s ease, opacity 1s ease; */
+    transition: all 1s ease;
+}
+
+.project-card:hover .project-card-text-container p{
+    max-height: 95px;
+    opacity:1;
+    
+}
+
+.project-card:hover{
+    transform: perspective(1200px) translateY(-5%) rotateX(25deg) translateZ(0);
+    box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+}
+
+
+
+
