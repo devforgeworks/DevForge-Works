@@ -14,7 +14,13 @@
     box-sizing: border-box;
 }
 
+a{
+    color: var(--light-text);
+}
+
 body{
+    height: 100vh;
+    width:100vw;
     overflow-x: hidden;
     background: var(--dark-bg);
     color: var(--light-text);
@@ -29,18 +35,44 @@ header{
     align-items: center;
     text-align: center;
     position:relative;
-    padding: 0 5px 0 5px;
+    /* padding: 0 5px 0 5px; */
+}
+
+header img{
+    width: 100%;
 }
 
 nav{
-    height:7vh;
+    height:5vh;
     position:fixed;
-    top:0;
-    background: transparent;
+    width: 100%;
+    inset:0;
+    background: var(--dark-accent);
+    
+}
+
+h1{
+    font-size: clamp(1.5rem, 2vw, 4rem);
+}
+
+h2{
+    font-size: clamp(2rem,4vw, 5rem); 
+}
+
+h3{
+    font-size: clamp(1.5rem, 2vw, 4rem);
+}
+
+h4{
+    font-size: clamp(1rem, 2vw, 2rem);
+}
+
+p{
+    font-size: clamp(1.25rem, 2vw, 2rem);
 }
 
 .btn{
-    margin-top:5px;
+    margin-top:15px;
     width: 7rem;
     height: 2rem;
     border-radius: 9999px;
@@ -57,35 +89,58 @@ nav{
 /* <---------Write the ham menu here-----------------> */
 
 .main-content{
-    height:100vh;
-    width:100vw;
+    /* height:100vh;
+    width:100vw; */
     display: flex;
     flex-direction: column;
-}
-
-
-.about, .projects{
-    min-height:50%;
-    width: 100%;
-    padding: 0 5px 0 5px;
-}
-
-.about img{
-    width: 50%;
+    
 }
 
 .pressentation{
     display: flex;
+    text-align: center;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
-    /* text-align: center; */
+    
 }
+
+.pressentation img{
+    width: 50%;
+}
+
+.about{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.about-text-container, .twitch-container, .header-text{
+    width: 90%;
+}
+
+.projects{
+    height:100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* .projects button{
+    margin-top:30px;
+} */
 
 
 .projects-container{
     width: 100%;
-    margin-top: 10px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -122,8 +177,9 @@ nav{
 .project-card-text-container p{
     max-height:0px;
     opacity: 0;
-    /* transition: max-height 1s ease, opacity 1s ease; */
     transition: all 1s ease;
+    font-size: clamp(0.75rem, 2vw, 1.5rem);
+
 }
 
 .project-card:hover .project-card-text-container p{
@@ -138,5 +194,44 @@ nav{
 }
 
 
+footer{
+    height:5vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+    background: var(--dark-accent);
+}
+
+footer p{
+    /* font-size: clamp(0.75rem, 2vw, 1.5rem); */
+    font-size: 0.75rem;
+}
 
 
+@media(min-width:1000px){
+    .pressentation img{
+        width: 20%;
+}
+
+.project-card{
+    width: 25%;
+    height: 50%;
+    position:relative;
+    overflow: hidden;
+    border: 1px solid var(--green-accent);
+    transition: all 2s ease;
+}
+
+.about-text-container, .twitch-container, .header-text{
+    width: 60%;
+}
+
+.project-card:hover .project-card-text-container p{
+    max-height: 200px;
+    opacity:1;
+    
+}
+
+}
