@@ -29,6 +29,7 @@ body{
 header{
     width: 100vw;
     height:100vh;
+    margin-top:20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -44,31 +45,35 @@ header img{
 
 nav{
     height:5vh;
-    position:fixed;
     width: 100%;
-    inset:0;
+    position:relative;
+    top:0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
     background: var(--dark-accent);
-    
 }
 
+
+
 h1{
-    font-size: clamp(1.5rem, 2vw, 4rem);
+    font-size: clamp(1.5rem, 2vw, 2rem);
 }
 
 h2{
-    font-size: clamp(2rem,4vw, 5rem); 
+    font-size: clamp(2rem,2vw, 3rem); 
 }
 
 h3{
-    font-size: clamp(1.5rem, 2vw, 4rem);
-}
-
-h4{
     font-size: clamp(1rem, 2vw, 2rem);
 }
 
+h4{
+    font-size: clamp(0.75rem, 2vw, 1.5rem);
+}
+
 p{
-    font-size: clamp(1.25rem, 2vw, 2rem);
+    font-size: clamp(1rem, 2vw, 1.5rem);
 }
 
 .btn{
@@ -109,7 +114,7 @@ p{
 }
 
 .about{
-    height: 100vh;
+    height: 70vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -124,7 +129,7 @@ p{
 }
 
 .projects{
-    height:100vh;
+    height:70vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -133,10 +138,6 @@ p{
     align-items: center;
     text-align: center;
 }
-
-/* .projects button{
-    margin-top:30px;
-} */
 
 
 .projects-container{
@@ -231,6 +232,11 @@ footer p{
 .project-card:hover .project-card-text-container p{
     max-height: 200px;
     opacity:1;
+    
+}
+
+.about, .projects{
+    height:120vh;
     
 }
 
