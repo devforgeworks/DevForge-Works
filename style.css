@@ -31,6 +31,7 @@ h2 {
 h3 {
   font-size: clamp(1.25rem, 2vw, 2.5rem);
   color: var(--dark-accent);
+  text-decoration: underline;
 }
 
 .slogan {
@@ -44,7 +45,7 @@ h4 {
 }
 
 p {
-  font-size: clamp(0.75rem, 2vw, 1.25rem);
+  font-size: clamp(1rem, 2vw, 1.25rem);
   color: var(--dark-bg);
 }
 
@@ -103,7 +104,10 @@ header img {
   justify-content: center;
   align-items: center;
   padding: 1rem;
-  gap: 15px;
+  gap: 2rem;
+  margin-bottom:2rem;
+  background: var(--green-accent);
+  border-radius: 25px;
 }
 
 .about img {
@@ -123,7 +127,7 @@ header img {
   height: 2rem;
   border-radius: 9999px;
   background: transparent;
-  border: 2px solid var(--highlight);
+  border: 2px solid var(--dark-bg);
   color: var(--dark-bg);
   font-weight: bolder;
   transition: all 1s ease;
@@ -133,8 +137,10 @@ header img {
     background: var(--dark-bg);
     color:var(--light-text);
     scale:1.1;
-    transform: translateY(-5px);
+    /* transform: translateY(-5px); */
     cursor: pointer;
+    box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+    transform: perspective(200px) translateY(-2px) rotateX(20deg) translateZ(0);
 }
 
 
@@ -159,7 +165,8 @@ header img {
 .card {
   /* min-width:100%; */
   flex: 1 1 50%;
-  max-height: 20%;
+  min-height: 15%;
+  max-height:30%;
   position: relative;
   overflow: hidden;
   transition: all 0.8s ease;
@@ -215,12 +222,13 @@ footer {
   .card-container {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   .card {
     max-width: 45%;
     flex: 1 1 35%;
-    max-height: 40%;
+    max-height: 60%;
     position: relative;
     overflow: hidden;
     transition: all 0.8s ease;
