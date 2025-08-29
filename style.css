@@ -5,6 +5,7 @@
   --light-text: #d8dee9;
   --highlight: #88c0d0;
   --green-accent: #a3be8c;
+  --backdrop: backdrop-filter: blur(2px);
   font-family: sans-serif;
 }
 
@@ -12,6 +13,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.background{
+  background: url("./assets/img/ChatGPT\ Image\ 29\ aug.\ 2025\ 23_50_39.png") no-repeat center center;
+  height:100dvh;
+  width: 100%;
+  background-size: cover;
+  position: fixed;
+  inset: 0;
+  z-index: -1;
 }
 
 body {
@@ -49,6 +61,15 @@ p {
   color: var(--dark-bg);
 }
 
+a{
+  text-decoration: none;
+  color:var(--light-text);
+}
+
+footer p{
+  color:var(--light-text);
+}
+
 .global-container {
   max-width: 1200px;
   display: grid;
@@ -71,11 +92,70 @@ nav {
   position: sticky;
   top: 0;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   z-index: 7;
-  margin-inline: auto;
+  
+  /* margin-inline: auto; */
 }
+
+.ham-menu{
+  width: 40px;
+  height:100%;
+  padding-top:5px;
+  display: flex;
+  flex-direction:column;
+  gap:3px;
+  z-index: 99;
+}
+
+.ham-menu span{
+  height:4px;
+  width: 100%;
+  background:black;
+  border-radius: 25%;
+}
+
+.menu{
+  position:fixed;
+  width: 200px;
+  height: 40dvh;
+  background:rgba(46, 52, 64, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:15px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  z-index:5;
+  transform:translateY(-500px);
+  opacity: 0;
+  transition: all 0.8s ease;
+}
+
+.menu.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.menu a{
+  height:2rem;
+  width:7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  text-decoration: none;
+  color:var(--light-text);
+  transition: all 0.5s ease-in-out;
+}
+
+.menu a:hover{
+  background: var(--highlight);
+  color:var(--dark-bg);
+}
+
 
 header {
   min-height: 95dvh;
@@ -87,6 +167,9 @@ header {
   text-align: center;
   gap: 15px;
   padding: 1rem;
+  backdrop-filter: blur(2px);
+  border-radius: 10px;
+  margin-bottom:2rem;
 }
 
 header img {
@@ -106,8 +189,11 @@ header img {
   padding: 1rem;
   gap: 2rem;
   margin-bottom:2rem;
-  background: var(--green-accent);
-  border-radius: 25px;
+  backdrop-filter: blur(2px);
+  border-radius: 10px;
+  /* background:rgba(164, 191, 141, 0.4); */
+  background: rgba(136, 192, 208, 0.4);
+  
 }
 
 .about img {
@@ -152,6 +238,8 @@ header img {
   flex-direction: column;
   align-items: center;
   gap: 2rem;
+  backdrop-filter: blur(2px);
+  border-radius: 10px;
 }
 
 .card-container {
@@ -166,19 +254,19 @@ header img {
   /* min-width:100%; */
   flex: 1 1 50%;
   min-height: 15%;
-  max-height:30%;
+  max-height:25%;
   position: relative;
   overflow: hidden;
   transition: all 0.8s ease;
-  border: 1px solid var(--green-accent);
-  border-radius: 25px;
+  border: 2px solid var(--green-accent);
+  /* border-radius: 25px; */
 }
 
 .card img {
   max-width: 100%;
   object-fit: cover;
   aspect-ratio: 1/1;
-  border-radius: 25px;
+  /* border-radius: 25px; */
 }
 
 .card-text {

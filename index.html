@@ -9,6 +9,7 @@
     <title>DevForge Works</title>
   </head>
   <body>
+    <div class="background"></div>
     <div class="global-container">
       <nav>
         <div class="ham-menu">
@@ -17,6 +18,14 @@
           <span></span>
         </div>
       </nav>
+
+      <div class="menu">
+          <a href="">Home</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="mailto:devforgeworks@gmail.com">Contact</a>
+          <a href="https://www.twitch.com/rathoz" target="_blank">Twitch</a>
+        </div>
 
       <header>
         <h1>WELCOME TO</h1>
@@ -29,7 +38,7 @@
         </h2>
       </header>
 
-      <div class="about">
+      <div class="about" id="about">
         <h3>About Me</h3>
         <img src="./assets/img/selfie-removebg-preview.png" alt="" />
         <p>
@@ -48,7 +57,7 @@
         </div>
       </div>
 
-      <div class="projects">
+      <div class="projects" id="projects">
         <h3>Recent projects</h3>
         <div class="card-container">
           <div class="card">
@@ -79,5 +88,7 @@
     <p>DevForge Works &#169</p>
     <a href="mailto:">devforgeworks@gmail.com</a>
   </footer>
+
+  <script src="./script.js"></script>
   </body>
 </html>
