@@ -1,21 +1,36 @@
-const hamMenu = document.querySelector(".ham-menu");
-const menu = document.querySelector(".menu");
+const homeSlide = document.getElementById("home");
+const hamMenu = document.getElementById("ham-menu");
+const aside = document.getElementById("sideMenu");
+const nav = document.getElementById("nav");
+const navLink = document.getElementsByClassName(".nav-link");
 
 
-hamMenu.addEventListener("click", function(){
-    hamMenu.classList.toggle("active");
-    menu.classList.toggle("active");
+
+window.addEventListener("load", () =>{
+    homeSlide.classList.add("active");
 });
 
+function updateSlide(){
+    document.querySelectorAll(".slide").forEach(slide => slide.classList.remove("active"));
 
-document.addEventListener("click", function(event){
+    const id = location.hash.slice(1);
 
-    if(hamMenu.contains(event.target)){
-        return;
-
-    }else{
-        menu.classList.remove("active");
+    if(id){
+        const target = document.getElementById(id);
+        if(target){
+            target.classList.add("active");
+            aside.classList.remove("menuActive");
+            nav.classList.remove("navActive");
+        }
     }
 
+}
+
+window.addEventListener("hashchange", updateSlide);
+updateSlide();
+
+hamMenu.addEventListener("click", () => {
+    aside.classList.toggle("menuActive");
+    nav.classList.toggle("navActive");    
 });
 
