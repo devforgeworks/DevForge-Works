@@ -95,6 +95,7 @@ a:hover{
     justify-content: space-evenly;
     padding: 4rem;
     height: 50dvh;
+    margin-bottom: 30px;
 
 }
 
@@ -201,4 +202,5 @@ footer{
     .icons-wrapper{
         justify-content: center;
     }
+
 }
