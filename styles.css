@@ -58,7 +58,7 @@ h3 {
 p {
     font-size: clamp(1rem, 2vw, 1.25rem);
     line-height: 1.6;
-    max-width: 80ch; /* gör textblock lättläst */
+    max-width: 80ch;
 }
 
 a{
@@ -148,7 +148,6 @@ a:hover{
 
 .card:hover{
     box-shadow: 0 0 30px rgba(244, 217, 149, 0.251), 0 0 60px rgba(224, 116, 81, 0.15);
-    transform: perspective(2000px) translateY(-2px) rotateX(5deg) translateZ(0);
 }
 
 .button-card-wrapper{
@@ -204,4 +203,5 @@ footer{
     }
 
 }
+
 
