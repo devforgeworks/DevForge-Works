@@ -4,8 +4,6 @@
     --cadet: #566574;
     --yellow: #F4D995;
     --fire-red: #E07451;
-
-
 }
 
 *{
@@ -28,6 +26,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 
 header{
@@ -58,7 +57,7 @@ h3 {
 p {
     font-size: clamp(1rem, 2vw, 1.25rem);
     line-height: 1.6;
-    max-width: 80ch;
+    max-width: 80ch; /* gör textblock lättläst */
 }
 
 a{
@@ -83,11 +82,25 @@ a:hover{
     transition: all 200ms;
     font-weight: bold;
     text-decoration: none;
+    
 }
 
 .btn:hover {
     transform: translateY(-2px);
     box-shadow: 0 6px 10px rgba(0,0,0,0.25);
+    background: linear-gradient(45deg, #F4D995, #E07451);
+}
+
+.home-btn{
+    margin-top: 20px;
+}
+
+.home{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #about{
@@ -98,14 +111,14 @@ a:hover{
 
 }
 
-#recent-projects, #upcoming-projects{
+#recent-projects, #upcoming-projects, #all-projects{
     padding: 4rem;
     display: flex;
     justify-content: space-evenly;
 }
 
-#all-projects-btn{
-    margin-bottom: 30px;
+#projects-link{
+    margin-bottom: 40px;
 }
 
 .text-wrapper{
@@ -127,6 +140,8 @@ a:hover{
 .card-wrapper{
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 5px;
 }
 
 .card{
@@ -138,7 +153,7 @@ a:hover{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    gap: 10px;
+    margin-bottom: 10px;
 }
 
 .card img{
@@ -148,6 +163,7 @@ a:hover{
 
 .card:hover{
     box-shadow: 0 0 30px rgba(244, 217, 149, 0.251), 0 0 60px rgba(224, 116, 81, 0.15);
+    transform: perspective(2000px) translateY(-2px) rotateX(5deg) translateZ(0);
 }
 
 .button-card-wrapper{
@@ -171,6 +187,16 @@ footer{
     gap: 5px;
 }
 
+.apc{
+    width: 70%;
+    padding: 1rem;
+}
+
+.apc a{
+    padding: .3rem 1rem;
+    font-size: 12px;
+}
+
 @media(max-width: 768px){
 
     .card-wrapper{
@@ -191,10 +217,9 @@ footer{
         gap: 10px;
         padding: 2rem 1rem;
         text-align: center;
-        margin-bottom: 30px;
     }
 
-    #recent-projects, #upcoming-projects{
+    #recent-projects, #upcoming-projects, #all-projects{
         padding: 1rem;
     }
 
@@ -202,6 +227,7 @@ footer{
         justify-content: center;
     }
 
-}
-
-
+    .apc{
+        width: 100%;
+    }
+} 

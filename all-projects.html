@@ -4,14 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
-    />
-
     <link rel="stylesheet" href="./styles.css" />
-    <title>DevForge Works</title>
+    <title>DevForge Works - All Projects</title>
   </head>
   <body>
     <header>
@@ -24,40 +18,11 @@
       <a class="btn" href="#contact">Contact Me</a>
     </header>
 
-    <div id="home" class="home slide">
-      <section id="about">
-        <div class="text-wrapper">
-          <h2>About Me</h2>
-          <p>
-            My name is Mattias. I'm a proud father of four, engaged and living
-            with my family in Dalarna, Sweden. I love coding, especially backend
-            development and building clean, well-structured projects. I enjoy
-            taking on challanges and learning new things along the way. Outside
-            of programming, I enjoy gaming and streaming on Twitch, where I
-            share both my coding projects and gameplay.
-          </p>
-        </div>
-
-        <div class="icons-wrapper">
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
-          />
-
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
-          />
-
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
-          />
-        </div>
-      </section>
-
-      <h2>Recent Projects</h2>
-      <section id="recent-projects">
+    <div class="home">
+      <a class="btn home-btn" href="./index.html">Home</a>
+      <section id="all-projects">
         <div class="card-wrapper">
-          <div class="card">
-            <img src="./img/pokefetch.png" alt="" />
+          <div class="card apc">
             <h3>PokeFetch</h3>
             <p>Fetch image and info about a Pokemon, through an API.</p>
             <div class="button-card-wrapper">
@@ -76,10 +41,28 @@
             </div>
           </div>
 
-          <div class="card">
-            <img src="./img/todolistimg.png" alt="" />
-            <h3>ToDo List</h3>
-            <p>Simple ToDo-list. No local storage.</p>
+          <div class="card apc">
+            <h3>Example Site 1</h3>
+            <p>Example landing page for a company</p>
+            <div class="button-card-wrapper">
+              <a
+                class="btn"
+                target="_blank"
+                href="https://devforgeworks.github.io/Example-site-1/"
+                >Live</a
+              >
+              <a
+                class="btn"
+                target="_blank"
+                href="https://github.com/devforgeworks/Example-site-1"
+                >Code</a
+              >
+            </div>
+          </div>
+
+          <div class="card apc">
+            <h3>To-Do List</h3>
+            <p>My first To-Do List</p>
             <div class="button-card-wrapper">
               <a
                 class="btn"
@@ -96,46 +79,50 @@
             </div>
           </div>
 
-          <div class="card">
-            <img src="./img/examplesite1.png" alt="" />
-            <h3>Example Site</h3>
-            <p>Example site for a company</p>
+          <div class="card apc">
+            <h3>Dice Game v2</h3>
+            <p>
+              Second version of the dice game. More functions. Not responsive.
+            </p>
             <div class="button-card-wrapper">
               <a
                 class="btn"
                 target="_blank"
-                href="https://devforgeworks.github.io/Example-site-1/"
+                href="https://devforgeworks.github.io/project-campfire-v2/"
                 >Live</a
               >
               <a
                 class="btn"
                 target="_blank"
-                href="https://github.com/devforgeworks/Example-site-1"
+                href="https://github.com/devforgeworks/project-campfire-v2"
+                >Code</a
+              >
+            </div>
+          </div>
+
+          <div class="card apc">
+            <h3>Dice Game v1</h3>
+            <p>
+              First version of the dice game. Few functions. Not responsive.
+            </p>
+            <div class="button-card-wrapper">
+              <a
+                class="btn"
+                target="_blank"
+                href="https://devforgeworks.github.io/project-campfire-v1/"
+                >Live</a
+              >
+              <a
+                class="btn"
+                target="_blank"
+                href="https://github.com/devforgeworks/project-campfire-v1"
                 >Code</a
               >
             </div>
           </div>
         </div>
       </section>
-      <a class="btn" id="projects-link" href="./all-projects.html"
-        >All Projects</a
-      >
-      <h2>Upcoming Projects</h2>
-      <section id="upcoming-projects">
-        <div class="card-wrapper">
-          <div class="card">
-            <img
-              src="https://images.unsplash.com/photo-1633506079263-7029b4f46762?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1632"
-              alt=""
-            />
-            <h3>Dice Game v3</h3>
-            <p></p>
-            <div class="button-card-wrapper">
-              <a class="btn" href="">Not Started</a>
-            </div>
-          </div>
-        </div>
-      </section>
+      <a class="btn home-btn" href="./index.html">Home</a>
     </div>
 
     <footer id="contact">
