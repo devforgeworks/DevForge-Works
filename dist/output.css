@@ -227,12 +227,6 @@
   .w-full {
     width: 100%;
   }
-  .max-w-10 {
-    max-width: calc(var(--spacing) * 10);
-  }
-  .max-w-100 {
-    max-width: calc(var(--spacing) * 100);
-  }
   .max-w-150 {
     max-width: calc(var(--spacing) * 150);
   }
@@ -272,9 +266,6 @@
   .rounded-sm {
     border-radius: var(--radius-sm);
   }
-  .bg-\[\.\/assets\/dicegamev2\.png\] {
-    background-color: ./assets/dicegamev2.png;
-  }
   .bg-main-dark {
     background-color: var(--color-main-dark);
   }
@@ -293,20 +284,14 @@
   .bg-\[url\(\'\.\.\/assets\/todolist\.png\'\)\] {
     background-image: url('../assets/todolist.png');
   }
-  .bg-\[url\(\'\.\/assets\/dicegamev2\.png\'\)\] {
-    background-image: url('./assets/dicegamev2.png');
-  }
-  .bg-\[url\(\'https\:\/\/images\.unsplash\.com\/photo-1461749280684-dccba630e2f6\?q\=80\&w\=1469\&auto\=format\&fit\=crop\&ixlib\=rb-4\.1\.0\&ixid\=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA\%3D\%3D\'\)\] {
-    background-image: url('https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-  }
-  .bg-\[url\(\'https\:\/\/plus\.unsplash\.com\/premium_photo-1661877737564-3dfd7282efcb\?q\=80\&w\=1500\&auto\=format\&fit\=crop\&ixlib\=rb-4\.1\.0\&ixid\=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA\%3D\%3D\'\)\] {
-    background-image: url('https://plus.unsplash.com/premium_photo-1661877737564-3dfd7282efcb?q=80&w=1500&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-  }
   .p-4 {
     padding: calc(var(--spacing) * 4);
   }
   .text-center {
     text-align: center;
+  }
+  .text-start {
+    text-align: start;
   }
   .font-\[Poppins\] {
     font-family: Poppins;
@@ -372,11 +357,6 @@
   .lg\:justify-center {
     @media (width >= 64rem) {
       justify-content: center;
-    }
-  }
-  .lg\:text-start {
-    @media (width >= 64rem) {
-      text-align: start;
     }
   }
   .xl\:text-5xl {
