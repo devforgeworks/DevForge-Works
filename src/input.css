@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@variant dark (&:where(.dark, .dark *));
+
+@theme{
+    --color-main-dark: #00001A;
+    --color-sec-dark: #000026;
+    --color-btn-color: #00002E;
+    --color-test-col:#0000F5;
+}
+
+.btnStyle{
+    @apply px-4 py-1 bg-btn-color rounded-sm border border-white;
+    @apply transition duration-300 lg:hover:border-transparent lg:hover:shadow-white hover:lg:shadow-md ;
+}
+
+
+.card{
+    @apply text-start p-4 rounded-sm bg-black/70 bg-blend-overlay shadow-white shadow-sm;
+}
+
+.card-btn{
+    @apply w-1/2 text-center border rounded-sm px-4 py-1 backdrop-blur-lg;
+    @apply transition duration-300 lg:hover:border-transparent lg:hover:shadow-sec-dark hover:lg:shadow-lg;
+}

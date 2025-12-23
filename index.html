@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="sv" class="scroll-smooth font-[Poppins]">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevForge Works</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="./dist/output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-main-dark text-white">
+    <a
+      class="bg-white w-10 h-10 fixed bottom-4 right-4 flex justify-center items-center text-black text-3xl rounded-sm"
+      href="#Hero"
+      >&uarr;</a
+    >
+
+    <div class="mainContent">
+      <section
+        id="Hero"
+        class="h-screen flex flex-col justify-center items-center text-center p-4"
+      >
+        <h1 class="text-3xl font-bold xl:text-5xl">Welcome to</h1>
+        <h2 class="text-4xl xl:text-6xl">DevForge Works</h2>
+        <img
+          class="w-[70%] lg:w-1/4"
+          src="./assets/ChatGPT_Image_14_dec._2025_15_33_57-removebg-preview.png"
+          alt=""
+        />
+        <p class="max-w-150">
+          Self-taught developer with a background in industrial maintenance, I enjoy building simple, user-friendly systems that help people work smarter. 
+          I'm always learning, always improving, and I share the journey along the way.
+        </p>
+        <div class="mt-4 flex gap-4">
+          <a class="btnStyle" href="#Projects">Projects</a>
+          <a class="btnStyle" href="#About">About</a>
+        </div>
+      </section>
+
+      <section
+        id="About"
+        class="bg-sec-dark h-screen text-center"
+      >
+        <h2 class="text-3xl font-bold xl:text-5xl">About me</h2>
+
+        <div class=" h-full flex flex-col items-center gap-4 p-4 lg:justify-center lg:items-center">
+          <img
+          class="w-[60%] rounded-[50%] lg:w-1/4"
+          src="./assets/selfie.jpeg"
+          alt=""
+        />
+        <p class="lg:w-2/4 lg:text-start">
+My name is Mattias Andersson, and I run DevForge Works. I'm a father of four, a husband, a gamer, and someone who genuinely enjoys building things with code.
+I'm a self-taught developer, still learning as I go. I like exploring ideas, breaking things, fixing them, and slowly making things better. I don't see myself as an expert, just someone who enjoys the craft and the process of figuring things out.
+<br><br>
+Besides getting into development, I've spent over a decade working in industrial maintenance, both on the floor and in leadership roles. That experience taught me how frustrating unclear processes and disconnected systems can be in everyday work. It also shaped how I think about software: it should be simple, practical, and actually helpful.
+At DevForge Works, I build small tools, systems, and experiments focused on usability and real-world problems. Sometimes it's about routines, structure, or LEAN-inspired thinking. Sometimes it's just about trying an idea and seeing where it leads.
+<br><br>
+I share much of this journey openly on my stream — the progress, the mistakes, the learning, and the small wins along the way. If that sounds interesting, you'll find the stream linked here and at the top of the page.
+        </p>
+      </section>
+        </div>
+      
+
+      <section id="Projects" class="text-center p-4 h-screen lg:flex lg:flex-col lg:justify-around">
+        <h2 class="text-3xl font-bold xl:text-5xl">Latest Projects</h2>
+
+        <div
+          id="CardContainer"
+          class="w-full grid grid-cols-1 grid-rows-3 text-center gap-8 my-4 lg:grid-cols-3 lg:grid-rows-1"
+        >
+          <div
+            id="Card"
+            class="card bg-[url('../assets/dicegamev2.png')]"
+          >
+            <div>
+              <h2 class="font-bold">Dice Game v2</h2>
+              <p>
+                Second version of the Dice Game. All functions done by me. Desing "refined" by Claude.
+              </p>
+            </div>
+
+            <div class="flex flex-col justify-center items-start gap-4 mt-4">
+              <a class="card-btn" href="https://devforgeworks.github.io/project-campfire-v2/" target="_blank">Live</a>
+              <a class="card-btn" href="https://github.com/devforgeworks/project-campfire-v2" target="_blank">Code</a>
+            </div>
+          </div>
+          <div
+            id="Card"
+            class="card bg-[url('../assets/todolist.png')]"
+          >
+            <div>
+              <h2 class="font-bold">First Ever ToDo List</h2>
+              <p>
+                First ever ToDo List. No local storage.
+              </p>
+            </div>
+
+            <div class="flex flex-col justify-center items-start gap-4 mt-4">
+              <a class="card-btn" href="https://devforgeworks.github.io/first-ever-todo-list/" target="_blank">Live</a>
+              <a class="card-btn" href="https://github.com/devforgeworks/first-ever-todo-list" target="_blank">Code</a>
+            </div>
+          </div>
+          <div
+            id="Card"
+            class="card bg-[url('../assets/examplesite1.png')]"
+          >
+            <div>
+              <h2 class="font-bold">Example Site</h2>
+              <p>
+                A example site for a company.
+              </p>
+            </div>
+
+            <div class="flex flex-col justify-center items-start gap-4 mt-4">
+              <a class="card-btn" href="https://devforgeworks.github.io/Example-site-1/" target="_blank">Live</a>
+              <a class="card-btn" href="https://github.com/devforgeworks/Example-site-1" target="_blank">Code</a>
+            </div>
+          </div>
+        </div>
+        <a class="btnStyle w-1/8 self-center hidden" href="">All Projects</a>
+      </section>
+      
+    </div>
+    <footer class="bg-sec-dark h-10 flex justify-center items-center">
+      <p>DevForge Works 2026</p>
+      <span>&copy;</span>
+    </footer>
+  </body>
+</html>

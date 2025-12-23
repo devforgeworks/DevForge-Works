@@ -1,0 +1,15 @@
+{
+  "name": "tailwind-4-optimized",
+  "version": "1.0.0",
+  "description": "Optimized Tailwind CSS 4 setup",
+  "scripts": {
+    "tailwind:watch": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "tailwind": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^4.0.0"
+  }
+}
